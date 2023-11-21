@@ -73,10 +73,16 @@ form .preview-area{
       border: 2px dashed #7d2ae8;
       border-radius: 5px;
 }
+.preview-area.active{
+      border: none;
+}
 .preview-area .thumbnail{
       width: 100%;
       border-radius: 5px;
       display: none;
+}
+.preview-area.active .thumbnail{
+      display: block;
 }
 .preview-area .icon{
       color: #7d2ae8;
@@ -85,6 +91,10 @@ form .preview-area{
 .preview-area span{
       color: #7d2ae8;
       margin-top: 25px;
+}
+.preview-area.active .icon,
+.preview-area.active span{
+      display: none;
 }
 form .download-btn{
       height: 53px;
